@@ -1,0 +1,28 @@
+
+.fon1 {
+    background-color: #413b3b;
+    height: 300px;
+    font-size: 40px;
+    color: hsl(208, 100%, 97%);
+}
+
+.color {
+    color: #d446e7;
+}
+
+.block {
+    background-color: #dd4b4b;
+    height: 253px;
+    width: 253px;
+}
+
+.fon2 {
+    background-color: #c998f7;
+    width: 60%;
+    font-size: 40px;
+}
+
+.span {
+    background-color: blueviolet;
+    color: #ffffff;
+}
