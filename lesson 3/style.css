@@ -1,0 +1,23 @@
+header {
+    background-color: #f3b634;
+    height: 60px;
+}
+
+img {
+    width: 300px;
+}
+
+.blockquote {
+    background-color: #f8e3ba;
+}
+
+footer {
+    background-color: #854af3;
+    height: 300px;
+    color: #ffffff;
+}
+
+footer ul li a {
+    color: #ffffff;
+}
+
