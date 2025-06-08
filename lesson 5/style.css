@@ -1,0 +1,19 @@
+.block {
+    border: 1px solid #818181;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #eae6ee;
+    height: 600px;
+    overflow: auto;
+}
+
+.cells {
+    border-radius: 20px;
+    background-color: rgb(230, 203, 165);
+    box-shadow: inset 0px 0px 15px 0px rgb(71, 71, 71);
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 10px;
+    display: inline-block;
+    max-width: 300px;
+    font-size: 20px;
+}
