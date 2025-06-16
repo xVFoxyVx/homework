@@ -42,7 +42,7 @@ nav {
 }
 
 .section1 {
-    background: url(/img/bg1.jpg) 0 0 / cover no-repeat;
+    background: url(./img/bg1.jpg) 0 0 / cover no-repeat;
     height: 550px;
 }
 
