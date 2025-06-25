@@ -5,9 +5,9 @@ body {
 }
 
 .ball {
-    position: fixed;
-    top: 74%;
-    left: 55%;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
     background-color: rgb(206, 57, 57);
     height: 100px;
     width: 100px;
