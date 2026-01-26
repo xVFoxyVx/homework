@@ -1,0 +1,149 @@
+html {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 130%;
+    color: #535755;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 1px;
+}
+
+a, button {
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    padding: 30px 0;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d3cbd9;
+    margin-bottom: 80px;
+}
+
+.nav-contact {
+    text-align: right;
+}
+
+.contact-text{ 
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #858e8a;
+    margin-bottom: 8px;
+}
+
+.contact-phone {
+    font-weight: 500;
+    font-size: 18px;
+    color: #2c332f;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-phone:hover { 
+    color: #3596ed;
+}
+
+.footer {
+    margin-top: auto;
+    background: linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
+    padding: 60px 0 40px 0;
+
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    padding: 40px 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav_link:visited {
+    text-decoration: none;
+}
+
+.nav-link:hover { 
+    color: #3596ed;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #d3cbd9;
+    padding-top: 40px;
+}
+
+.footer-text img {
+    margin-right: 4px;
+}
+
+.footer-text p {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #858e8a;
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+@media (width <= 768px) {
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
