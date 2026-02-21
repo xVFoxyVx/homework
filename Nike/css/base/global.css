@@ -56,3 +56,10 @@ button:focus-visible {
     color: var(--main-color);
 }
 
+.size-sm {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+

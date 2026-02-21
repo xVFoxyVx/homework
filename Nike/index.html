@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./icons/nike-favicon-48x48.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./js/fslightbox.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
     <title>Nike Air Mag</title>
 </head>
@@ -175,24 +176,25 @@
                     <div class="product__sizes-wrapper">
                         <section class="product__sizes">
                             <h4 class="product__sizes-title product__sizes-title--in-stock">Размеры в наличии</h4>
-                            <div class="product__sizes-list">
-                                <button class="product__sizes-button" aria-label="Выбрать зазмер"
+                            <div class="product__sizes-list" data-sizes="list">
+                                <button class="product__sizes-button" data-sizes="button" aria-label="Выбрать зазмер"
                                     title="Выбрать размер">38</button>
-                                <button class="product__sizes-button" aria-label="Выбрать зазмер"
+                                <button class="product__sizes-button" data-sizes="button" aria-label="Выбрать зазмер"
                                     title="Выбрать размер">40</button>
-                                <button class="product__sizes-button product__sizes-button--active"
+                                <button class="product__sizes-button product__sizes-button--active" data-sizes="button"
                                     aria-label="Выбрать зазмер" title="Выбрать размер">41</button>
-                                <button class="product__sizes-button" aria-label="Выбрать зазмер"
+                                <button class="product__sizes-button" data-sizes="button" aria-label="Выбрать зазмер"
                                     title="Выбрать размер">42</button>
-                                <button class="product__sizes-button" aria-label="Выбрать зазмер"
+                                <button class="product__sizes-button" data-sizes="button" aria-label="Выбрать зазмер"
                                     title="Выбрать размер">44</button>
-                                <button class="product__sizes-button" aria-label="Выбрать зазмер"
+                                <button class="product__sizes-button" data-sizes="button" aria-label="Выбрать зазмер"
                                     title="Выбрать размер">45</button>
                             </div>
                             <div class="product__buy-wrapper">
                                 <div class="product__buy-button">Купить в 1 клик</div>
                                 <div class="product__cart-button" aria-label="Добавить в корзину"
-                                    title="Добавить в корзину"><img src="./icons/cart-icon.svg" width="23" height="23" loading="lazy" alt="Корзина"></div>
+                                    title="Добавить в корзину"><img src="./icons/cart-icon.svg" width="23" height="23"
+                                        loading="lazy" alt="Корзина"></div>
                             </div>
                         </section>
                         <section class="product__sizes">
@@ -204,10 +206,106 @@
                                 <button class="product__sizes-button" disabled>46</button>
                                 <button class="product__sizes-button" disabled>47</button>
                             </div>
-                            <a class="product__sizes-link" href="#" >Заказать размер</a>
+                            <a class="product__sizes-link" href="#">Заказать размер</a>
                         </section>
                     </div>
                 </section>
+            </div>
+        </section>
+        <section id="characteristics" class="characteristics section">
+            <div class="container">
+                <h2 class="characteristics__title title section__title">Характеристики</h2>
+                <div class="characteristics__video">
+                    <picture>
+                        <source srcset="./img/characteristics-video.webp">
+                        <img class="characteristics__video-preview" src="./img/characteristics-video.jpg" width="1240"
+                            height="600" loading="lazy" alt="Кроссовки Nike Air Mag лежат на желтой коробке">
+                    </picture>
+                    <a data-fslightbox href="https://www.youtube.com/watch?v=xdafuKFG5ZQ"
+                        class="characteristics__video-play-link" title="Запустить видео">
+                        <img class="characteristics__video-play-icon" src="./icons/play-icon.svg" width="17" height="24"
+                            alt="Запустить видео">
+                    </a>
+                </div>
+                <div class="characteristics__list">
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#planet"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Футуристический дизайн</h3>
+                        <p class="characteristics__cart-text">Nike Air Mag выделяются своим уникальным и оригинальным
+                            дизайном, который сразу же привлекает внимание. Эта модель создана для тех, кто ценит стиль,
+                            вдохновленный наукой и фантастикой</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#laces"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Автоматическая шнуровка</h3>
+                        <p class="characteristics__cart-text">Инновационная система автоматической шнуровки обеспечивает
+                            идеальную фиксацию обуви на ноге без необходимости вручную завязывать шнурки, что
+                            значительно повышает комфорт</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#none"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Ограниченный выпуск</h3>
+                        <p class="characteristics__cart-text">Nike Air Mag были выпущены в ограниченном количестве, что
+                            делает каждую пару желанным объектом для коллекционеров и любителей уникальных кроссовок</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#lamp"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Встроенная подсветка</h3>
+                        <p class="characteristics__cart-text">Благодаря светодиодной подсветке, кроссовки выглядят
+                            эффектно в темное время суток. Это придает им еще больше оригинальности и уникальности</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#shoes"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Автоматическая шнуровка</h3>
+                        <p class="characteristics__cart-text">Модель предлагает высокий уровень комфорта благодаря
+                            качественной амортизации и поддержке стопы, что делает их идеальными для длительного ношения
+                        </p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#material"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Современные материалы</h3>
+                        <p class="characteristics__cart-text">Nike Air Mag изготовлены из высококачественных
+                            синтетических материалов, которые обеспечивают долговечность, устойчивость к износу и
+                            легкость в уходе</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#sports"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Хорошая сцепляемость</h3>
+                        <p class="characteristics__cart-text">Подошва кроссовок обладает отличным сцеплением с
+                            различными поверхностями, что обеспечивает надежность при ходьбе и беге</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#diamond"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Культовый статус</h3>
+                        <p class="characteristics__cart-text">Nike Air Mag стали культовыми благодаря своему появлению в
+                            кино "Назад в будущее 2", что подчеркивает их историческую и культурную значимость</p>
+                    </article>
+                    <article class="characteristics__cart">
+                        <svg class="characteristics__cart-icon" width="56" height="56">
+                            <use href="./icons/characteristics-sprite.svg#boom"></use>
+                        </svg>
+                        <h3 class="characteristics__cart-title size-sm">Яркое дополнение к любому образу</h3>
+                        <p class="characteristics__cart-text">Кроссовки легко вписываются в различные стили одежды,
+                            позволяя создавать уникальные образы. Они могут дополнить как спортивный, так и повседневный
+                            стиль</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
