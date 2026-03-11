@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script defer src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Shop.co</title>
+</head>
+
+<body class="page__body">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__advertisement container">
+                <p class="header__advertisement-text">Зарегестрируйтесь и получите скидку 20% на первую покупку.</p>
+                <a href="#" class="header__advertisement-link">Зарегестрироваться сейчас</a>
+                <button class="header__btn-cross" onclick="this.closest('.header__wrapper').style.display = 'none'">
+                    <svg class="header__btn-cross-icon" width="20" height="20">
+                        <use href="./icon/sprite.svg#cross-up"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header__container container">
+            <div class="header__inner">
+                <button class="header__burger burger" title="Меню" aria-label="Открыть меню" aria-expanded="false"
+                    aria-controls="header__menu">
+                    <svg width="24" height="24">
+                        <use class="header__burger-icon" href="./icon/sprite.svg#burger"></use>
+                        <use class="header__burger-cross" href="./icon/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+                <p class="header__logo">SHOP.CO</p>
+            </div>
+            <nav class="header__menu" id="header__menu" aria-label="Главное меню">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Скидки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Новые поступления</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Бренды</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__controls">
+                <div class="control__search">
+                    <button class="control__search-button" title="Поиск" aria-label="Поиск">
+                        <svg width="24" height="24">
+                            <use class="control__search-button-icon" href="./icon/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                    <input class="control__search-txt" type="text" placeholder="Искать товары...">
+                </div>
+                <button class="control__shop" title="Корзина" aria-label="Корзина">
+                    <svg width="24" height="24">
+                        <use class="control__shop-icon" href="./icon/sprite.svg#shop"></use>
+                    </svg>
+                </button>
+                <button class="control__profile" title="Профиль" aria-label="Профиль">
+                    <svg width="24" height="24">
+                        <use class="control__profile-icon" href="./icon/sprite.svg#profile"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__welcome">
+                    <h1 class="hero__title">НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ</h1>
+                    <p class="hero__text">Просмотрите наш набор тщательно сделанной одежды, созданный чтобы подчеркнуть
+                        ваш индивидуальный стиль. </p>
+                    <button class="hero__button">Купить сейчас</button>
+                    <div class="hero__info">
+                        <div class="hero__info-item">
+                            <p class="hero__info-item-number">200+</p>
+                            <p class="hero__info-item-text">Всемирных брендов</p>
+                        </div>
+                        <div class="hero__info-item hero__info-item--border">
+                            <p class="hero__info-item-number">2,000+</p>
+                            <p class="hero__info-item-text">Качественных товаров</p>
+                        </div>
+                        <div class="hero__info-item hero__info-item--last">
+                            <p class="hero__info-item-number">30,000+</p>
+                            <p class="hero__info-item-text">Счастливых клиентов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__inner">
+                    <picture>
+                        <source srcset="./img/hero-img.webp" type="image/webp">
+                        <img class="hero__img" src="./img/hero-img.jpg" width="620" height="664"
+                            alt="Девушка и парень стоят вместе в брендов одежде">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="brand__container container">
+                <div class="brand__inner">
+                    <svg class="brand__inner-item1" width="167" height="34">
+                        <use href="./icon/brand-sprite.svg#versace"></use>
+                    </svg>
+                    <svg class="brand__inner-item2" width="91" height="38">
+                        <use href="./icon/brand-sprite.svg#zara"></use>
+                    </svg>
+                    <svg class="brand__inner-item3" width="156" height="36">
+                        <use href="./icon/brand-sprite.svg#gucci"></use>
+                    </svg>
+                    <svg class="brand__inner-item4" width="194" height="32">
+                        <use href="./icon/brand-sprite.svg#prada"></use>
+                    </svg>
+                    <svg class="brand__inner-item5" width="207" height="34">
+                        <use href="./icon/brand-sprite.svg#calvin"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="news-products">
+            <div class="news-products__container container">
+                <h2 class="news-products__title title">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+                <div class="news-products__products products">
+                    <article class="news-products__product">
+                        <a href="#" class="news-products__link">
+                            <picture class="news-products__picture picture">
+                                <source srcset="./img/product-1.webp" type="image/webp">
+                                <img class="news-products__picture-img product-img" src="./img/product-1.jpg"
+                                    width="295" height="298" alt="Черная футболка с лентой">
+                            </picture>
+                            <p class="news-products__name product-name">Футболка с лентой</p>
+                            <img class="news-products__img rating" src="./img/rating-4.5.png" width="150" height="19"
+                                alt="Рейтинг товара 4.5 из 5">
+                            <div class="news-products__price price">
+                                <p class="news-products__price-now now-price">₽5000</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-products__product">
+                        <a href="#" class="news-products__link">
+                            <picture class="news-products__picture picture">
+                                <source srcset="./img/product-2.webp" type="image/webp">
+                                <img class="news-products__pictur-img product-img" src="./img/product-2.jpg" width="295"
+                                    height="298" alt="Узкие джинсы">
+                            </picture>
+                            <p class="news-product__name product-name">Узкие джинсы</p>
+                            <img class="news-products__img rating" src="./img/rating-3.5.png" width="126" height="19"
+                                alt="Рейтинг товара 3.5 из 5">
+                            <div class="news-product__price price">
+                                <p class="news-product__price-now now-price">₽5000</p>
+                                <p class="news-product__price-old old-price">₽6000</p>
+                                <div class="news-product__price-sale sale">-20%</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-products__product">
+                        <a href="#" class="news-products__link">
+                            <picture class="news-products__picture picture">
+                                <source srcset="./img/product-3.webp" type="image/webp">
+                                <img class="news-products__pictur-img product-img" src="./img/product-3.jpg" width="295"
+                                    height="298" alt="Клетчатая рубашка">
+                            </picture>
+                            <p class="news-product__name product-name">Клетчатая рубашка</p>
+                            <img class="news-products__img rating" src="./img/rating-4.5.png" width="150" height="19"
+                                alt="Рейтинг товара 4.5 из 5">
+                            <div class="news-product__price price">
+                                <p class="news-product__price-now now-price">₽7000</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-products__product">
+                        <a href="#" class="news-products__link">
+                            <picture class="news-products__picture picture">
+                                <source srcset="./img/product-4.webp" type="image/webp">
+                                <img class="news-products__pictur-img product-img" src="./img/product-4.jpg" width="295"
+                                    height="298" alt="Футболка с полосами">
+                            </picture>
+                            <p class="news-product__name product-name">Футболка с полосами</p>
+                            <img class="news-products__img rating" src="./img/rating-4.5.png" width="150" height="19"
+                                alt="Рейтинг товара 4.5 из 5">
+                            <div class="news-product__price price">
+                                <p class="news-product__price-now now-price">₽6000</p>
+                                <p class="news-product__price-old old-price">₽8000</p>
+                                <div class="news-product__price-sale sale">-30%</div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="news-products__all all">
+                    <a href="#" class="news-products__link-all link-all">Посмотреть всё</a>
+                </div>
+            </div>
+        </section>
+        <section class="leader">
+            <div class="leader__container container">
+                <h2 class="leader__title title">ЛИДЕРЫ ПРОДАЖ</h2>
+                <div class="leader__products products">
+                    <article class="leader__product product">
+                        <a href="#" class="leader__link">
+                            <picture class="leader__picture picture">
+                                <source srcset="./img/product-5.webp" type="image/webp">
+                                <img class="leader__picture-img product-img" src="./img/product-5.jpg" width="295"
+                                    height="298" alt="Рубашка в полоску">
+                            </picture>
+                            <p class="leader__name product-name">Рубашка в полоску</p>
+                            <img class="leader__img rating" src="./img/rating-5.png" width="160" height="19"
+                                alt="Рейтинг товара 5 из 5">
+                            <div class="leader__price price">
+                                <p class="leader__price-now now-price">₽5000</p>
+                                <p class="leader__price-old old-price">₽6000</p>
+                                <div class="leader__price-sale sale">-20%</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="leader__product product">
+                        <a href="#" class="leader__link">
+                            <picture class="leader__picture picture">
+                                <source srcset="./img/product-6.webp" type="image/webp">
+                                <img class="leader__picture-img product-img" src="./img/product-6.jpg" width="295"
+                                    height="298" alt="Футболка «Courage»">
+                            </picture>
+                            <p class="leader__name product-name">Футболка «Courage»</p>
+                            <img class="leader__img rating" src="./img/rating-4.png" width="138" height="19"
+                                alt="Рейтинг товара 4 из 5">
+                            <div class="leader__price price">
+                                <p class="leader__price-now now-price">₽5000</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="leader__product product">
+                        <a href="#" class="leader__link">
+                            <picture class="leader__picture picture">
+                                <source srcset="./img/product-7.webp" type="image/webp">
+                                <img class="leader__picture-img product-img" src="./img/product-7.jpg" width="295"
+                                    height="298" alt="Свободные бермуды">
+                            </picture>
+                            <p class="leader__name product-name">Свободные бермуды</p>
+                            <img class="leader__img rating" src="./img/rating-3.png" width="113" height="19"
+                                alt="Рейтинг товара 3 из 5">
+                            <div class="leader__price price">
+                                <p class="leader__price-now now-price">₽4000</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="leader__product product">
+                        <a href="#" class="leader__link">
+                            <picture class="leader__picture picture">
+                                <source srcset="./img/product-8.webp" type="image/webp">
+                                <img class="leader__picture-img product-img" src="./img/product-8.jpg" width="295"
+                                    height="298" alt="Потертые узкие джинсы">
+                            </picture>
+                            <p class="leader__name product-name">Потертые узкие джинсы</p>
+                            <img class="leader__img rating" src="./img/rating-4.5.png" width="150" height="19"
+                                alt="Рейтинг товара 4.5 из 5">
+                            <div class="leader__price price">
+                                <p class="leader__price-now now-price">₽7000</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="leader__all all">
+                    <a href="#" class="leader__link-all link-all">Посмотреть всё</a>
+                </div>
+            </div>
+        </section>
+        <section class="style">
+            <div class="style__container container">
+                <h2 class="style__title">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+                <div class="style__inner">
+                    <a href="#" class="style__link item1">
+                        <div class="style__cart style__cart-free">
+                            <p class="style__text">Свободный</p>
+                        </div>
+                    </a>
+                    <a href="#" class="style__link item2">
+                        <div class="style__cart style__cart-formal">
+                            <p class="style__text">Формальный</p>
+                        </div>
+                    </a>
+                    <a href="#" class="style__link item3">
+                        <div class="style__cart style__cart-evening">
+                            <p class="style__text">Вечерний</p>
+                        </div>
+                    </a>
+                    <a href="#" class="style__link item4">
+                        <div class="style__cart style__cart-sport">
+                            <p class="style__text">Спорт</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="tip">
+            <div class="tip__container container">
+                <div class="tip__swiper swiper">
+                    <div class="tip__wrapper-button">
+                        <h2 class="tip__title">ЧТО О НАС ГОВОРЯТ</h2>
+                        <div class="tip__swiper-button">
+                            <button class="tip__swiper-button--prev">
+                                <svg width="24" height="24">
+                                    <use class="btn-prev" href="./icon/sprite.svg#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <button class="tip__swiper-button--next">
+                                <svg width="24" height="24">
+                                    <use class="btn-next" href="./icon/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tip__wrapper swiper-wrapper">
+                        <div class="tip__slide swiper-slide">
+                            <img class="tip__img" src="./icon/stars.svg" width="138" height="22" alt="Отзыв на 5 звезд">
+                            <p class="tip__author">Виталий У.<img src="./icon/nice.svg" width="24" height="24"
+                                    alt="Белая галочка в зеленом кругу"></p>
+                            <p class="tip__text">«Я в восторге от качества и стиля одежды, которую получил от
+                                Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои
+                                ожидания.»</p>
+                        </div>
+                        <div class="tip__slide swiper-slide">
+                            <img class="tip__img" src="./icon/stars.svg" width="138" height="22" alt="Отзыв на 5 звезд">
+                            <p class="tip__author">Даниил В.<img src="./icon/nice.svg" width="24" height="24"
+                                    alt="Белая галочка в зеленом кругу"></p>
+                            <p class="tip__text">«Раньше было трудно найти одежду под мой стиль, пока я не открыл
+                                Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и случаев.»</p>
+                        </div>
+                        <div class="tip__slide swiper-slide">
+                            <img class="tip__img" src="./icon/stars.svg" width="138" height="22" alt="Отзыв на 5 звезд">
+                            <p class="tip__author">Альберт Б.<img src="./icon/nice.svg" width="24" height="24"
+                                    alt="Белая галочка в зеленом кругу"></p>
+                            <p class="tip__text">«Я всегда ищу уникальные модные вещи и был рад открыть для себя
+                                Shop.co. Их выбор одежды очень разнообразен и полностью соответствует последним модным
+                                трендам.»</p>
+                        </div>
+                        <div class="tip__slide swiper-slide">
+                            <img class="tip__img" src="./icon/stars.svg" width="138" height="22" alt="Отзыв на 5 звезд">
+                            <p class="tip__author">Максим А.<img src="./icon/nice.svg" width="24" height="24"
+                                    alt="Белая галочка в зеленом кругу"></p>
+                            <p class="tip__text">«Я впечатлён качеством и стилем одежды от Shop.co. От повседневных
+                                вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__news">
+                <h3 class="footer__news-title">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</h3>
+                <div class="footer__data">
+                    <div class="footer__email">
+                        <svg class="footer__email-icon" width="24" height="24">
+                            <use href="./icon/sprite.svg#email"></use>
+                        </svg>
+                        <input class="footer__email-input" type="email" placeholder="Ваша почта">
+                    </div>
+                    <button class="footer__sign">Подписаться на рассылку</button>
+                </div>
+            </div>
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p class="footer__logo">SHOP.CO</p>
+                    <p class="footer__text">У нас есть одежда, что подходит вашему стилю и которой можно гордиться.
+                        Для
+                        женщин и мужчин.</p>
+                    <div class="footer__messengers">
+                        <a href="#" class="footer__messengers-link">
+                            <svg class="footer__messengers-link-twitter" width="28" height="28">
+                                <use href="./icon/messengers-sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__messengers-link">
+                            <svg class="footer__messengers-link-facebook" width="28" height="28">
+                                <use href="./icon/messengers-sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__messengers-link">
+                            <svg class="footer__messengers-link-instagram" width="28" height="28">
+                                <use href="./icon/messengers-sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__messengers-link">
+                            <svg class="footer__messengers-link-github" width="28" height="28">
+                                <use href="./icon/messengers-sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__company">
+                    <h4 class="footer__title">Компания</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О нас</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Функции</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Работы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Карьера</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__help">
+                    <h4 class="footer__title">Помощь</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Поддержка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Доставка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Условия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__question">
+                    <h4 class="footer__title">Вопросы</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Аккаунт</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">О доставке</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Заказы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Платежи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h4 class="footer__title">Ресурсы</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Бесплатные книги</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Уроки</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Блог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.youtube.com/watch?v=HSD1ijhADWg" class="footer__link">Плейлист на
+                                YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <p class="footer__permission">Shop.co © 2000-2023, Все права защищены</p>
+                <div class="footer__carts">
+                    <svg class="footer__cart" width="65" height="49">
+                        <use href="./icon/carts-sprite.svg#visa"></use>
+                    </svg>
+                    <svg class="footer__cart" width="65" height="49">
+                        <use href="./icon/carts-sprite.svg#master-cart"></use>
+                    </svg>
+                    <svg class="footer__cart" width="65" height="49">
+                        <use href="./icon/carts-sprite.svg#paypal"></use>
+                    </svg>
+                    <svg class="footer__cart" width="65" height="49">
+                        <use href="./icon/carts-sprite.svg#apple-pay"></use>
+                    </svg>
+                    <svg class="footer__cart" width="65" height="49">
+                        <use href="./icon/carts-sprite.svg#google-pay"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
