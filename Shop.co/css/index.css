@@ -1,0 +1,15 @@
+@import './base/normalize.css';
+@import './base/fonts.css';
+@import './base/global.css';
+@import './base/vars.css';
+
+@import './block/header.css';
+@import './block/burger.css';
+@import './block/hero.css';
+@import './block/brand.css';
+@import './block/news-product.css';
+@import './block/leader.css';
+@import './block/style.css';
+@import './block/tip.css';
+@import './block/footer.css';
+

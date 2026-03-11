@@ -1,0 +1,136 @@
+@media (width > 576px) {
+    .tip__container {
+        padding: 80px 0 170px;
+    }
+}
+
+@media (width <=576px) {
+    .tip__container {
+        padding: 50px 0 184px;
+    }
+}
+
+.tip__title {
+    font-weight: 900;
+    font-size: clamp(1.625rem, 1.137rem + 2.08vw, 2.75rem);
+}
+
+@media (width <=576px) {
+    .tip__title {
+        max-width: 200px;
+    }
+}
+
+.tip__wrapper-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+@media (width > 576px) {
+    .tip__wrapper-button {
+        margin-bottom: 40px;
+    }
+}
+
+@media (width <=576px) {
+    .tip__wrapper-button {
+        margin-bottom: 24px;
+    }
+}
+
+.tip__swiper-button--prev {
+    margin-right: 16px;
+}
+
+.tip__slide {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+@media (width > 992px) {
+    .tip__slide {
+        padding: 28px 32px;
+        width: 400px;
+    }
+}
+
+@media (width <=992px) {
+    .tip__slide {
+        padding: 24px;
+        width: 400px;
+    }
+}
+
+@media (width > 768px) {
+    .tip__img {
+        margin-bottom: 15px;
+    }
+}
+
+@media (width <=768px) {
+    .tip__img {
+        margin-bottom: 12px;
+        width: 118px;
+        height: 19px;
+    }
+}
+
+.tip__author {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+}
+
+@media (width > 768px) {
+    .tip__author {
+        font-size: 20px;
+        line-height: 110%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (width <=768px) {
+    .tip__author {
+        font-size: 16px;
+        line-height: 138%;
+        margin-bottom: 8px;
+    }
+}
+
+.tip__text {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (width < 576px) {
+    .tip__text {
+        height: 95px;
+    }
+}
+
+@media (width >= 576px) {
+    .tip__text {
+        height: 130px;
+    }
+}
+
+@media (width > 768px) {
+    .tip__text {
+        line-height: 138%;
+        height: 100px;
+    }
+}
+
+@media (width <=768px) {
+    .tip__text {
+        font-size: 14px;
+        line-height: 143%;
+    }
+}
+
+@media (width >= 992px) {
+    .tip__text {
+        height: 130px;
+    }
+}
